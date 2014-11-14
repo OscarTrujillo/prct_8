@@ -83,42 +83,15 @@ describe Exam do
     	
     		
     		
-    	  	#expect(%w[@n1 @n2 @n3].all? { |pregunta| pregunta.level >=2}).to eq(false)
-    		#[@lista].all? { |pregunta| pregunta.level >1}
     	
     	
-    	   #expect (@lista.to_s.to eq(@n1.value @n2.value @n3.vaule @n4.value @n5.value)
+    	   
 			expect(@lista.count).to eq(5)   
-			#expect((@lista.all?) {|nodo| nodo.level < 9 }).to eq(true)
-			
-			#expect(@lista.max { |@n1.level, @n2.level, @n3.level, @n4.level, @n5.level| @n2.level  <=> @n4.level }).to eq(@n4)
-			
-			
-			
-			
 			expect(@lista.max).to eq(@p3)
 			expect(@lista.min).to eq(@p5)
 			
-		
-		
-		
-		
-		
-			#expect(@lista.find_index {|1| i.value == @n3.value}).to eq(2)
 			
 			
-			
-			#expect(@lista.max {|a, b, c, d, e| a.level <=>  d.level}).to eq(d)
-			
-			
-			#expect(@lista.max).to eq(@n4)
-			
-			
-			
-			#expect(@lista.all?).to eq()
- 			#expect(@lista.max).to eq(4)
- 			
-    	    #expect(@n1.value).to eq("La pregunta es: Es apropiado que una clase Tablero herede de una clase Juego")
     		expect(@p5.to_s).to eq("La pregunta es: Es apropiado que una clase Tablero herede de una clase Juego\n 1) Cierto\n2) Falso\n")
     		expect(@n5.value).to eq(@p5)
     	   	expect(@lista.head).should eq(@n5)
